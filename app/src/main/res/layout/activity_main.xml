@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/popupBTN"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="520dp"
+        android:background="?attr/selectableItemBackground"
+        app:icon="@android:drawable/ic_dialog_info"
+        app:iconPadding="0sp"
+        app:iconSize="30dp"
+        app:iconTint="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="270dp">
+
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:checked="true"
+            android:text="ml/grama" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="litro/kg" />
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="180dp"
+        android:text="Digite as informações nutricionais para ter o total em calorias!"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/totProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Qtd total Ex: 1kg"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/totPorcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Porção Ex: 60g"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="430dp"
+        android:hint="Cal p/ porção Ex:129kcal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/calPorcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="520dp"
+        android:onClick="calcCalorias"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="610dp"
+        android:text="Feito com muito amor pelo Gil s2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Bem vindo ao Calorias!" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="50dp"
+        android:text="~ Uma ferramenta que vai te ajudar no dia a dia." />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="------------------------------------------------------------------------" />
+
+
+</RelativeLayout>
