@@ -32,12 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button popupBTN;
     Dialog mDialog;
-
-
     RadioGroup radioGroup;
     RadioButton radioButton;
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 //        AlertDialog dialog = builder.create();
 //        dialog.show();
 
-        
+
 
         resultado = findViewById(R.id.textResultado);
         totalProduto = findViewById(R.id.totProduto);
