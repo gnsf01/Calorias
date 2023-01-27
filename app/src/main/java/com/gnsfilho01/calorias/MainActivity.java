@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         popupBTN = findViewById(R.id.popupBTN);
         mDialog = new Dialog(this);
 
-
+//tartareli
 
 
         popupBTN.setOnClickListener(new View.OnClickListener() {
