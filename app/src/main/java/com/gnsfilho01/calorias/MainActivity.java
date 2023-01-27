@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         calpporcao = findViewById(R.id.calPorcao);
         radioGroup = findViewById(R.id.radioGroup);
 
+        
+
+
         popupBTN = findViewById(R.id.popupBTN);
         mDialog = new Dialog(this);
 
