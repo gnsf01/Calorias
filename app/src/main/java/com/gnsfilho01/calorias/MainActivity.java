@@ -60,12 +60,17 @@ public class MainActivity extends AppCompatActivity {
 //        AlertDialog dialog = builder.create();
 //        dialog.show();
 
+        
+
         resultado = findViewById(R.id.textResultado);
         totalProduto = findViewById(R.id.totProduto);
         totalPorcao = findViewById(R.id.totPorcao);
         calpporcao = findViewById(R.id.calPorcao);
+
+
+
         radioGroup = findViewById(R.id.radioGroup);
-        
+
         popupBTN = findViewById(R.id.popupBTN);
         mDialog = new Dialog(this);
 
