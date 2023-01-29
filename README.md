@@ -22,7 +22,7 @@
  * O App é uma solução nativa para android (Não funcionará em IOS ou qualquer outra plataforma que não seja Android).
 
 ## Tecnologias em desenvolvimento 👨‍💻
-- Implementar novos campos para realizar um calculo mais assertivo.
+- Implementar novos campos/Alterar o calculo para realizar um calculo mais assertivo.
 - Trocar a imagem do pre-loader.
 
 ## Preview
