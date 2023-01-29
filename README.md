@@ -22,5 +22,7 @@
  * Para realizar o calculo é necessário ter o produto em mãos para saber as informações presentes no rótulo.
  * O App é uma solução nativa para android (Não funcionará em IOS ou qualquer outra plataforma que não seja Android).
 
+## Preview
+#
 
 
