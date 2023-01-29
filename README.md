@@ -1,5 +1,6 @@
 # Calorias
 
+
 > Status: Developing ⚠️
 
 #### O App Calorias é uma solução nativa para android desenvolvida em Java.
@@ -25,3 +26,6 @@
 ## Tecnologias em desenvolvimento:
 - Implementar novos campos para realizar um calculo mais assertivo.
 - Trocar a imagem do pre-loader.
+
+## Preview
+# ![Sem Título-1](https://user-images.githubusercontent.com/123014840/215302745-6673875b-660b-4e37-9ad6-5b2099156c56.png)
